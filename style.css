@@ -1,0 +1,107 @@
+:root {
+  --title-color: #3f3d56;
+  --title-highlight: #ee24ff;
+  --text-color: #828282;
+  --bg-color: #eceff2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 626px;
+  height: 486px;
+  margin: 64px auto 64px;
+}
+
+#main img {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--title-color);
+}
+
+strong {
+  color: var(--title-color);
+}
+
+span {
+  color: var(--title-highlight);
+}
+
+#paragraphs {
+  max-width: 540px;
+}
+
+#paragraphs p {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Open sans", sans-serif;
+  color: var(--text-color);
+}
+
+#paragraphs span {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+#paragraphs p + p {
+  margin-top: 32px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  margin: auto;
+}
+
+footer a {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3f3d56;
+  text-decoration: none;
+}
+
+#line {
+  width: 391px;
+  height: 0px;
+  border: 1px solid var(--bg-color);
+  margin-bottom: 16px;
+}
+
+#wave {
+  position: absolute;
+  width: 100%;
+  top: 686px;
+}
+
+@media (max-width: 600px) {
+  #wave {
+    width: 120vw;
+  }
+}
